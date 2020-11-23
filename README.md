@@ -1,2 +1,2 @@
 # foochat
-* Branches: testing/tuth
+* Branches: client/main
