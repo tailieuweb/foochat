@@ -1,3 +1,3 @@
 # foochat
 
-branche: testing/sonNV
+branches: testing/sonNV
