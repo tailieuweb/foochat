@@ -1,2 +1,0 @@
-# foochat
-* Branches: testing/datCT
