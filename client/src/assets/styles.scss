@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none !important;
+}
+
+.max-height {
+	height: 100vh;
+	max-height: 70vh;
+}
+.bg-part {
+	background-color: #f4a261;
+}
+.avt-ico {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+}
+.avt-ico-big {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+}
+.display-5 {
+	font-size: 20px;
+}
+// Register.js, Login.js
+.auth-page {
+	video {
+		background-color: #eee;
+		min-height: 100%;
+		min-width: 100%;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+	}
+	.display-screen {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		min-width: 500px;
+		h1 {
+			color: #fff;
+		}
+		form {
+			border-radius: 10px;
+			color: #fff;
+			padding: 10px;
+			background-color: rgba(0, 150, 136, 0.5);
+			.form-control {
+				color: green;
+			}
+			.form-control:focus {
+				background-color: rgb(165, 214, 167);
+				outline: none;
+				border-color: unset;
+				box-shadow: 0px 0px 14px -3px rgba(0, 150, 136, 0.5);
+			}
+			.submit {
+				text-align: center;
+				.btn-primary {
+					background-color: green;
+					outline: none;
+					border: none;
+					padding: 7px 30px;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+				font-weight: bolder;
+				transition: all 0.5s;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 576px){
+		.display-screen{
+			min-width:300px;
+		}
+		h1.display-4{
+			font-size:40px;
+		}
+	}
+}
+
+// Chat.js
+.chat {
+	.float-content {
+		width: 100%;
+		&::after {
+			display: table;
+			clear: both;
+		}
+		.float-1 {
+			float: left;
+			width: 20%;
+		}
+		.float-2 {
+			float: left;
+			width: 50%;
+		}
+		.float-3 {
+			float: left;
+			width: 30%;
+		}
+	}
+	// ChatBox.js
+	.chat-box {
+		padding:0px 5px;
+		.title-bar {
+		}
+		.sticker{
+			bottom:50px;
+			right:10px;
+		}
+		input{
+			padding-right:50px!important;
+		}
+		.btn-emoji{
+			width:20px;
+			height:20PX;
+			position:absolute;
+			right:20px;
+			top:50%;
+			transform: translateY(-50%);
+			background-color:darkgreen;
+		}
+	}
+
+	//ChatList.js
+	.chat-list {
+		padding:0px 5px;
+		position: relative;
+		.center-icon {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			transform: translateY(-50%);
+		}
+		.panel {
+			margin-bottom: 20px;
+		}
+	}
+
+	// Info.js
+	.info-user {
+		padding:0px 5px;
+		.title-bar {
+			background-color: #f4a261;
+			h2 {
+				height: 50px;
+				margin: 0;
+				font-size: 30px;
+				line-height:50px;
+			}
+		}
+		.info{
+			h3{
+				font-size:25px;
+				padding:20px;
+			}
+			ul{
+				list-style: none;
+				padding:0;
+				margin:0;
+				margin-left:20px;
+				.text-border{
+					color:red;
+					font-weight:bold;
+				}
+			}
+		}
+	}
+}

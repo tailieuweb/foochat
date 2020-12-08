@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.max-height {
+  height: 100vh;
+  max-height: 70vh;
+}
+
+.bg-part {
+  background-color: #f4a261;
+}
+
+.avt-ico {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.avt-ico-big {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+.display-5 {
+  font-size: 20px;
+}
+
+.auth-page video {
+  background-color: #eee;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.auth-page .display-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 500px;
+}
+.auth-page .display-screen h1 {
+  color: #fff;
+}
+.auth-page .display-screen form {
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 150, 136, 0.5);
+}
+.auth-page .display-screen form .form-control {
+  color: green;
+}
+.auth-page .display-screen form .form-control:focus {
+  background-color: #a5d6a7;
+  outline: none;
+  border-color: unset;
+  box-shadow: 0px 0px 14px -3px rgba(0, 150, 136, 0.5);
+}
+.auth-page .display-screen form .submit {
+  text-align: center;
+}
+.auth-page .display-screen form .submit .btn-primary {
+  background-color: green;
+  outline: none;
+  border: none;
+  padding: 7px 30px;
+}
+.auth-page .display-screen form a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 576px) {
+  .auth-page .display-screen {
+    min-width: 300px;
+  }
+  .auth-page h1.display-4 {
+    font-size: 40px;
+  }
+}
+
+.chat .float-content {
+  width: 100%;
+}
+.chat .float-content::after {
+  display: table;
+  clear: both;
+}
+.chat .float-content .float-1 {
+  float: left;
+  width: 20%;
+}
+.chat .float-content .float-2 {
+  float: left;
+  width: 50%;
+}
+.chat .float-content .float-3 {
+  float: left;
+  width: 30%;
+}
+.chat .chat-box {
+  padding: 0px 5px;
+}
+.chat .chat-box .sticker {
+  bottom: 50px;
+  right: 10px;
+}
+.chat .chat-box input {
+  padding-right: 50px !important;
+}
+.chat .chat-box .btn-emoji {
+  width: 20px;
+  height: 20PX;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: darkgreen;
+}
+.chat .chat-list {
+  padding: 0px 5px;
+  position: relative;
+}
+.chat .chat-list .center-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.chat .chat-list .panel {
+  margin-bottom: 20px;
+}
+.chat .info-user {
+  padding: 0px 5px;
+}
+.chat .info-user .title-bar {
+  background-color: #f4a261;
+}
+.chat .info-user .title-bar h2 {
+  height: 50px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 50px;
+}
+.chat .info-user .info h3 {
+  font-size: 25px;
+  padding: 20px;
+}
+.chat .info-user .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+.chat .info-user .info ul .text-border {
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
