@@ -70,7 +70,7 @@ const Info = (props) => {
 
 	return (
 		<div className="float-3">
-			{user.rule === "user" ? (
+			{/* {user.rule === "user" ? (
 				<div className="info-user">
 					<div className="px-2 title-bar d-flex align-items-center">
 						<h2>Công cụ</h2>
@@ -115,7 +115,7 @@ const Info = (props) => {
 				</div>
 			) : (
 				""
-			)}
+			)} */}
 		</div>
 	);
 };
