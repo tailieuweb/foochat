@@ -42,7 +42,7 @@ const ChatBox = ({ chatId, userId }) => {
 			<div className="chat-box">
 				<TitleBar name={otherUsername} className="self-start" />
 				<MessageList name={otherUsername} conversation={cvs} />
-				<div className="w-full px-4 mt-1">
+				<div className="w-full px-4 mt-1" id="input-messages">
 					<InputPanel
 						cid={chatId}
 						uid={userId}

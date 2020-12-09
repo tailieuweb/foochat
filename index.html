@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chat-app {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            border: 1px solid #4e44dd;
+            border-radius: 10px;
+        }
+
+        #script-app {
+            position:fixed;
+            bottom: 20px;
+            right:20px;
+            width: 0px;
+            height: 0px;
+            padding: 30px;
+            border: none;
+            background-color: #4e44dd;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <iframe id="script-app"></iframe>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            let chat = document.getElementById('script-app');
+            console.log(chat);
+
+            chat.onclick = () => {
+                console.log('click');
+                chat.setAttribute('src', 'http://localhost:3000/admin')
+                document.getElementById('script-app').setAttribute('id', 'chat-app');
+            }
+        })
+
+    </script>
+</body>
+
+</html>

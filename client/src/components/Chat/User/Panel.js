@@ -7,7 +7,7 @@ const Panel = () => {
 	return (
 		<div className="panel">
 			<div className="d-flex justify-content-center bg-part">
-				<div className="col-lg-8 d-flex align-items-center">
+				<div className="col-lg-8 d-flex align-items-center hidden-mobile">
 					<img
 						src={getAvatar(localStorage.username)}
 						className="avt-ico"

@@ -13,7 +13,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "^4.0.1",
     "react-scroll": "^1.8.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
@@ -46,7 +46,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.2",
-    "sass": "^1.29.0",
+    "sass": "^1.30.0",
     "tailwindcss": "^1.9.6",
     "tailwindcss-spinner": "^1.2.0"
   }
