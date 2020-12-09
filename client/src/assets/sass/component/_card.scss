@@ -1,0 +1,92 @@
+/**EVENTS AND GROUP CARD STYLING **/
+
+.card{
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	box-shadow: $box-shadow;
+	background-color: white;
+	justify-content: space-between;
+	position: relative;
+	margin: 6%;
+
+	@include response(phone){
+		width: 80%;
+	}
+	
+	@include response(tab-port){
+		width: 70%;
+	}
+
+	 @include response(tab-land) {
+	 	width: 80%;
+	 }
+
+	
+	.close-button {
+		position: absolute;
+		top: 3%;
+		left: 85%;
+		color: red;
+		font-size: 3rem;
+
+		@include response(phone) {
+			top: .1%;
+			left: 86%;
+			font-size: 2rem;
+		}
+	}
+
+	&__header{
+		border-bottom: 1px solid black;
+		width: 100%;
+		font-size: 2.6rem;
+		font-weight: bold;
+		margin: 0;
+		background-color: $color-primary-light;
+		text-align: center;
+		padding: 10px;
+		pointer-events: none;
+		text-transform: uppercase;
+	}
+
+	&__details{
+		width: 100%;
+		text-align: center;
+		padding: 3rem;
+
+		.form-submit-button{
+			margin: 3rem 1rem 0rem 1rem;
+
+			padding: 1rem 2.3rem;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__item{
+
+		.label{
+			font-size: 1.6rem;
+			font-weight: bolder;
+		}
+
+		.data{
+			font-size: 1.5rem;
+		}
+	}
+
+	a {
+		width: 100%;
+		color: white;
+		font-size: 2.6rem;
+		font-weight: bold;
+		margin: 0;
+		background-color: $color-primary-light;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+}

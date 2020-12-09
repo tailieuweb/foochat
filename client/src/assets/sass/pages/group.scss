@@ -1,0 +1,20 @@
+.group{
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    height: 85%;
+
+
+    @include response(phone){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat__main-section{
+        @include response(phone) {
+            position: static;
+        }
+        
+    }
+
+}

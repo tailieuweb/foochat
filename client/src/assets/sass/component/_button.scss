@@ -1,0 +1,132 @@
+/*****BUTTON STYLINGS****/
+.btn{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  top: 60px;
+  font-size: 1.4rem;
+  position: relative;
+  width: 60%;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+}
+
+.btn-white{
+  background-color: $color-primary-dark;
+  color: black;
+  font-weight: bold;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(black, .2);/**x, y, blur, color)**/
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(black, .2);
+}
+
+/**create the btn effec**/
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%; 
+  border-radius: 100px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after{
+  background-color: black;
+
+}
+/* when we hover the button show the after element with the styles below added**/
+.btn:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+
+}
+
+
+.form-submit-button{
+    @include removeDefaultButtonStyle;
+    background-color: $color-primary-dark;
+    font-weight: bolder;
+    color: black;
+    padding: 1.5rem 3rem;
+    margin: 2rem auto;
+    position: relative;
+    border: 2px solid blue($color: #000000);
+    border-radius: 4px;
+    box-shadow: 0 1.4rem 4rem rgba(128, 128, 128, 0.336) ;
+    cursor: pointer;
+
+    &:disabled{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+    }
+
+
+    @include response(phone){
+      display: inline-block;
+      padding: 2rem 3rem ;
+      font-size: 1.5rem;
+    }
+  
+  
+  &:hover {
+    color: white;
+
+  }
+}
+
+.add-button{
+  padding: 1rem 4rem;
+  @include removeDefaultButtonStyle;
+  box-shadow: 0px 5px 10px rgba(black, .2), 0px -5px 10px rgba(black, .1);
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid $color-primary-dark;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 0 auto;
+  color: $color-primary-dark;
+  font-size: 1.5rem;
+  border-radius: 20px;
+
+  &:focus{
+    opacity: .7;
+  }
+
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+
+.sign-out{
+  display: flex;
+  font-size: 3rem;
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+
+  svg{
+    font-size:  3rem;
+  }
+  
+  &:focus{
+    opacity: .7;
+  }
+
+  &:hover{
+    transform: scale(1.01);
+  }
+}

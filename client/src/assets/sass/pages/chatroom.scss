@@ -1,0 +1,15 @@
+.chatroom{
+    display: flex;
+    height: 85vh;
+    width: 100%;
+
+    @include response(phone){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include response(tab-port) {
+        display: flex;
+        flex-direction: column;
+    }
+}
